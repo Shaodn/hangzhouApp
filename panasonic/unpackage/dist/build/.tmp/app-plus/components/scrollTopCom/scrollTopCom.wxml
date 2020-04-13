@@ -1,0 +1,1 @@
+<view><block wx:if="{{scrollTop>100}}"><view data-event-opts="{{[['tap',[['returnTop',['$event']]]]]}}" class="returnTop" bindtap="__e"><image src="../../static/fanhuidingbu.png" mode="aspectFit"></image></view></block></view>

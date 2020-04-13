@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/productlist/productlist",
+    "pages/product/product",
+    "pages/promotion/promotion",
+    "pages/promotionlist/promotionlist",
+    "pages/wheretobuy/wheretobuy"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "松下电器旗舰店 杭州",
+    "navigationBarBackgroundColor": "#006b69",
+    "backgroundColor": "#f6f6f6"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#006b69",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/home_hover.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "产品分类",
+        "iconPath": "static/icon/category.png",
+        "selectedIconPath": "static/icon/category_hover.png"
+      },
+      {
+        "pagePath": "pages/promotionlist/promotionlist",
+        "text": "活动促销",
+        "iconPath": "static/icon/sale.png",
+        "selectedIconPath": "static/icon/sale_hover.png"
+      },
+      {
+        "pagePath": "pages/wheretobuy/wheretobuy",
+        "text": "如何购买",
+        "iconPath": "static/icon/shop.png",
+        "selectedIconPath": "static/icon/shop_hover.png"
+      }
+    ]
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "Panasonic Center",
+  "compilerVersion": "2.3.7",
+  "usingComponents": {}
+}

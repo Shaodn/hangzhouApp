@@ -1,0 +1,143 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/main/main",
+            "style" : {
+				// "navigationBarTitleText": "uni-app"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						// "titleColor": "#fff",
+						// "backgroundColor": "#007AFF",
+						"buttons": [{
+							"text": "搜索",
+							"width": "60px",
+							"fontSize": "20px",
+							"color": "#fff"
+						},{
+							"text": " ",
+							"width": "20px",
+							"fontSize": "20px",
+							"color": "#fff",
+							"float":"left"
+						}],
+						"searchInput": {
+							"backgroundColor": "#fff",
+							"borderRadius": "50px",
+							"placeholder": "搜索商品",
+							"autoFocus": true
+						}
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"app-plus":{
+					"titleNView":{
+						"type": "default",
+						"buttons":[
+							{"fontSrc":"/static/uni.ttf",
+							"text":"\ue466",
+							"fontSize":"27",
+							"fontWeight":"bold",
+							"width":"50px"
+							}
+						]
+					}
+				}
+				
+			}
+        }
+        ,{
+            "path" : "pages/productlist/productlist",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":{
+            			"type": "default",
+            			"buttons":[
+            				{"fontSrc":"/static/uni.ttf",
+            				"text":"\ue466",
+            				"fontSize":"27",
+            				"fontWeight":"bold",
+            				"width":"50px"
+            				}
+            			]
+            		}
+            	}
+            	
+            }
+        }
+        ,{
+            "path" : "pages/product/product",
+            "style" : {
+				"app-plus":{
+					"titleNView":{
+						"type": "default",
+						"buttons":[
+							{"fontSrc":"/static/uni.ttf",
+							"text":"\ue466",
+							"fontSize":"27",
+							"fontWeight":"bold",
+							"width":"50px"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/promotion/promotion",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/promotionlist/promotionlist",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/wheretobuy/wheretobuy",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle":"white",
+		"navigationBarTitleText": "松下电器旗舰店 杭州",
+		"navigationBarBackgroundColor": "#006b69",
+		"backgroundColor": "#f6f6f6"
+	},
+	"tabBar":{
+		"color":"#333333",
+		"selectedColor":"#006b69",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"list":[
+			{
+				"pagePath":"pages/main/main",
+				"text":"首页",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home_hover.png"
+			},{
+				"pagePath":"pages/category/category",
+				"text":"产品分类",
+				"iconPath":"static/icon/category.png",
+				"selectedIconPath":"static/icon/category_hover.png"
+			},{
+				"pagePath":"pages/promotionlist/promotionlist",
+				"text":"活动促销",
+				"iconPath":"static/icon/sale.png",
+				"selectedIconPath":"static/icon/sale_hover.png"
+			},{
+				"pagePath":"pages/wheretobuy/wheretobuy",
+				"text":"如何购买",
+				"iconPath":"static/icon/shop.png",
+				"selectedIconPath":"static/icon/shop_hover.png"
+			}
+		]
+		
+	}
+}

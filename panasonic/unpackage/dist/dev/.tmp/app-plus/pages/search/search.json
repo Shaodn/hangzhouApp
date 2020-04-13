@@ -1,0 +1,29 @@
+{
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "搜索",
+        "width": "60px",
+        "fontSize": "20px",
+        "color": "#fff"
+      },
+      {
+        "text": " ",
+        "width": "20px",
+        "fontSize": "20px",
+        "color": "#fff",
+        "float": "left"
+      }
+    ],
+    "searchInput": {
+      "backgroundColor": "#fff",
+      "borderRadius": "50px",
+      "placeholder": "搜索商品",
+      "autoFocus": true
+    }
+  },
+  "usingComponents": {
+    "product-item": "/components/product-item/product-item",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

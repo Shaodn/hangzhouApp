@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"conImage{ width: 100%; }\nbody{ background: #FFFFFF; }\n",],undefined,{path:"./pages/promotion/promotion.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/promotion/promotion.wxml') } }));

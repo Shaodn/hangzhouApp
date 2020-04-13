@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['gotoproduct']]]]}}" class="product-item" bindtap="__e"><view class="image-view"><image class="uni-product-image" src="{{'../../static/productimg/'+producturl+'_Gallery_1.jpg'}}" mode="aspectFit"></image></view><view class="uni-product-title">{{CatchPhrase}}<view class="_br"></view>{{productname}}</view></view>

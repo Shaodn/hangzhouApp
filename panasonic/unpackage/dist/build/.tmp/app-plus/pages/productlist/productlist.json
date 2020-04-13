@@ -1,0 +1,19 @@
+{
+  "titleNView": {
+    "type": "default",
+    "buttons": [
+      {
+        "fontSrc": "/static/uni.ttf",
+        "text": "",
+        "fontSize": "27",
+        "fontWeight": "bold",
+        "width": "50px"
+      }
+    ]
+  },
+  "usingComponents": {
+    "product-item": "/components/product-item/product-item",
+    "srorll-top-com": "/components/scrollTopCom/scrollTopCom",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

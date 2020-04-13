@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"Panasonic Center","entryPagePath":"pages/main/main.html","page":{"pages/main/main.html":{"window":{"usingComponents":{}}},"pages/search/search.html":{"window":{"titleNView":{"buttons":[{"text":"搜索","width":"60px","fontSize":"20px","color":"#fff"},{"text":" ","width":"20px","fontSize":"20px","color":"#fff","float":"left"}],"searchInput":{"backgroundColor":"#fff","borderRadius":"50px","placeholder":"搜索商品","autoFocus":true}},"usingComponents":{"product-item":"/components/product-item/product-item","uni-load-more":"/components/uni-load-more/uni-load-more"}}},"pages/category/category.html":{"window":{"titleNView":{"type":"default","buttons":[{"fontSrc":"/static/uni.ttf","text":"","fontSize":"27","fontWeight":"bold","width":"50px"}]},"usingComponents":{}}},"pages/productlist/productlist.html":{"window":{"titleNView":{"type":"default","buttons":[{"fontSrc":"/static/uni.ttf","text":"","fontSize":"27","fontWeight":"bold","width":"50px"}]},"usingComponents":{"product-item":"/components/product-item/product-item","srorll-top-com":"/components/scrollTopCom/scrollTopCom","uni-load-more":"/components/uni-load-more/uni-load-more"}}},"pages/product/product.html":{"window":{"titleNView":{"type":"default","buttons":[{"fontSrc":"/static/uni.ttf","text":"","fontSize":"27","fontWeight":"bold","width":"50px"}]},"usingComponents":{"product-item":"/components/product-item/product-item","srorll-top-com":"/components/scrollTopCom/scrollTopCom","uni-load-more":"/components/uni-load-more/uni-load-more","parser":"/components/jyf-Parser/index"}}},"pages/promotion/promotion.html":{"window":{"usingComponents":{}}},"pages/promotionlist/promotionlist.html":{"window":{"usingComponents":{}}},"pages/wheretobuy/wheretobuy.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"松下电器旗舰店 杭州","navigationBarBackgroundColor":"#006b69","backgroundColor":"#f6f6f6"}},"tabBar":{"color":"#333333","selectedColor":"#006b69","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/main/main.html","text":"首页","iconPath":"static/icon/home.png","selectedIconPath":"static/icon/home_hover.png"},{"pagePath":"pages/category/category.html","text":"产品分类","iconPath":"static/icon/category.png","selectedIconPath":"static/icon/category_hover.png"},{"pagePath":"pages/promotionlist/promotionlist.html","text":"活动促销","iconPath":"static/icon/sale.png","selectedIconPath":"static/icon/sale_hover.png"},{"pagePath":"pages/wheretobuy/wheretobuy.html","text":"如何购买","iconPath":"static/icon/shop.png","selectedIconPath":"static/icon/shop_hover.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/main/main","pages/search/search","pages/category/category","pages/productlist/productlist","pages/product/product","pages/promotion/promotion","pages/promotionlist/promotionlist","pages/wheretobuy/wheretobuy"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.7","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

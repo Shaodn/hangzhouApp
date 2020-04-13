@@ -1,0 +1,35 @@
+.CuWrap{
+	padding: 0 20rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.CuItem{
+	width: 50%;
+	margin-top: 40rpx;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.CuItem:nth-child(2n+1){
+	padding-right: 10rpx;
+}
+.CuItem:nth-child(2n + 2){
+	padding-left: 10rpx;
+}
+.CuItemImage{
+	width: 100%;
+	height: 194rpx;
+	margin-bottom: 20rpx;
+}
+.CuItemTitle{
+	font-size: 16rpx;
+}
+.CuItemDate{
+	font-size: 14rpx;
+	margin-top: 16rpx;
+}
+page{
+	background-color: #FFFFFF;
+}
+

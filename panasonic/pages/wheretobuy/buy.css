@@ -1,0 +1,56 @@
+.menu{
+	text-align: center;
+	border-bottom: 1px solid #e6e6e6;
+	padding-top: 19upx;
+	margin-bottom: 5upx;
+}
+.menuItem{
+	display: inline-block;
+	margin: 0 35upx 0 35upx;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 0 10upx;
+	padding-bottom: 16upx;
+}
+.menuItemGreen{
+	color: #016b69;
+	border-bottom: 5upx solid #016b69;
+}
+.BuyContent{
+	overflow: hidden;
+	margin-top: 32upx;
+}
+.contentLeft,.contentRight{
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	font-size: 18px;
+	padding: 0 20upx 0 20upx;
+}
+.ConLink{
+	font-size: 16px;
+}
+.contentLeft{
+	width: 65%;
+}
+.contentRight{
+	width: 35%;
+	overflow: hidden;
+}
+.ConLink{
+	margin-top:16upx;
+}
+.icon{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 16upx;
+}
+.buyImage{
+	float: right;
+	width: 210upx;
+	height: 75upx;
+} 
+page{
+	background-color: #FFFFFF;
+}
